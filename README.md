@@ -5,7 +5,7 @@ with a numeric covariate. Software: R 4.3.3 with car 3.1.2. Run the lines below 
 
 Tables and figures from the saved results:
 
-    Sys.setenv(SIM_OUTPUT_ROOT = "output", FIG_DPI = "400")
+    Sys.setenv(SIM_OUTPUT_ROOT = "output")   # figures: TIFF at 600 dpi; add FIG_FORMAT = "png" for PNG files
     source("make_tables_ancova.R"); source("make_figures_ancova.R")
     system("python score_extension.py output/ancova_ext/ancova_results.csv")
 
